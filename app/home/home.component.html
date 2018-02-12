@@ -1,0 +1,365 @@
+<h1>
+  {{ title }}
+</h1>
+<p>
+  {{ subTitle }}
+</p>
+
+<hr>
+<div>
+  <h2 class="text-error">Home: {{ message }}</h2>
+  <form class="form-inline">
+    <input type="text" [(ngModel)]="message" placeholder="Message">
+    <button type="submit" class="btn" (click)="updateMessage(message)">Update Message</button>
+  </form>
+</div>
+<div class="row">
+	<div class="panel-group col-sm-12" id="accordion">
+        <div class="row">
+            <div class="panel panel-default col-sm-12">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span class="glyphicon glyphicon-folder-close">
+                        </span>General</a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-sm-12">   
+    								<input type="checkbox" name="wApply" id="wApply">
+    								<label for="checkbox-1">Government Wedding application</label>
+                                
+                            </div>
+                            <div class="col-sm-6">
+                                    <input type="checkbox" name="ceremony" id="ceremony">
+    								<label for="ceremony">Ceremony Venue</label>
+    								<input type="checkbox" name="ceremony-no" id="ceremony-no">
+    								<label for="ceremony-no">No need</label>
+    								<!-- date -->
+    								<input type="text" placeholder="Reservation Date">
+    								<input type="text" placeholder="Attendance">
+    								<input type="text" placeholder="Address">
+
+    								<input type="checkbox" name="ceremony-sa-dine" id="ceremony-sa-dine">
+    								<label for="ceremony-sa-dine">Same Adddress with Dinner Venue</label>
+                            </div>
+                            <div class="col-sm-6">
+                                    <input type="checkbox" name="ceremony" id="ceremony">
+    								<label for="ceremony">Dinner Venue</label>
+    								<input type="checkbox" name="ceremony-no" id="ceremony-no">
+    								<label for="ceremony-no">No need</label>
+    								<!-- date -->
+    								<input type="text" placeholder="Reservation Date">
+    								<input type="text" placeholder="Attendance">
+    								<input type="text" placeholder="Address">
+
+                            </div>
+                            <hr />  
+                            <div class="col-sm-12">
+                            	<input type="checkbox" name="officiant" id="officiant">   
+                            	<label for="checkbox-1">Officiant</label>
+    							
+    							<input type="text" name="officiantName" placeholder="Name">	
+    							<input type="text" name="officiantNum" placeholder="Contact Phone Num.">	
+    								
+                                
+                            </div>    
+                            <div class="col-sm-12">
+                            	<input type="checkbox" name="officiant" id="officiant">   
+                            	<label for="checkbox-1">Witnesses</label>
+    							
+    							<input type="text" name="waitName1" placeholder="Name">	
+    							<input type="text" name="waitNum1" placeholder="Contact Phone Num.">
+
+    							<input type="text" name="waitName2" placeholder="Name">	
+    							<input type="text" name="waitNum2" placeholder="Contact Phone Num.">	
+                                
+                            </div>     
+                        </div>
+                            
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default col-sm-6">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon glyphicon-th">
+                        </span>Bride</a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-sm-12">
+                               
+                                    <a href="http://www.jquery2dotnet.com">Orders</a> <span class="label label-success">$ 320</span>
+                                
+                            </div>
+                            <div class="col-sm-12">
+                               
+                                    <a href="http://www.jquery2dotnet.com">Invoices</a>
+                                
+                            </div>
+                            <div class="col-sm-12">
+                               
+                                    <a href="http://www.jquery2dotnet.com">Shipments</a>
+                                
+                            </div>
+                            <div class="col-sm-12">
+                               
+                                    <a href="http://www.jquery2dotnet.com">Tex</a>
+                                
+                            </tr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default col-sm-6">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon glyphicon-user">
+                        </span>Bridegroom</a>
+                    </h4>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <table class="table">
+                            <tr>
+                                <td>
+                                    <a href="http://www.jquery2dotnet.com">Change Password</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="http://www.jquery2dotnet.com">Notifications</a> <span class="label label-info">5</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="http://www.jquery2dotnet.com">Import/Export</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="glyphicon glyphicon-trash text-danger"></span><a href="http://www.jquery2dotnet.com" class="text-danger">
+                                        Delete Account</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default col-sm-6">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><span class="glyphicon glyphicon-user">
+                        </span>Bridesmaid</a>
+                    </h4>
+                </div>
+                <div id="collapseFour" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <table class="table">
+                            <tr>
+                                <td>
+                                    <a href="http://www.jquery2dotnet.com">Change Password</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="http://www.jquery2dotnet.com">Notifications</a> <span class="label label-info">5</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="http://www.jquery2dotnet.com">Import/Export</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="glyphicon glyphicon-trash text-danger"></span><a href="http://www.jquery2dotnet.com" class="text-danger">
+                                        Delete Account</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default col-sm-6">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive"><span class="glyphicon glyphicon-user">
+                        </span>Groomsman</a>
+                    </h4>
+                </div>
+                <div id="collapseFive" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <table class="table">
+                            <tr>
+                                <td>
+                                    <a href="http://www.jquery2dotnet.com">Change Password</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="http://www.jquery2dotnet.com">Notifications</a> <span class="label label-info">5</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="http://www.jquery2dotnet.com">Import/Export</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="glyphicon glyphicon-trash text-danger"></span><a href="http://www.jquery2dotnet.com" class="text-danger">
+                                        Delete Account</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default col-sm-12">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix"><span class="glyphicon glyphicon-user">
+                        </span>Assisstant</a>
+                    </h4>
+                </div>
+                <div id="collapseSix" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <table class="table">
+                            <tr>
+                                <td>
+                                    <a href="http://www.jquery2dotnet.com">Change Password</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="http://www.jquery2dotnet.com">Notifications</a> <span class="label label-info">5</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="http://www.jquery2dotnet.com">Import/Export</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="glyphicon glyphicon-trash text-danger"></span><a href="http://www.jquery2dotnet.com" class="text-danger">
+                                        Delete Account</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default col-sm-12">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven"><span class="glyphicon glyphicon-user">
+                        </span>Decoration</a>
+                    </h4>
+                </div>
+                <div id="collapseSeven" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <table class="table">
+                            <tr>
+                                <td>
+                                    <a href="http://www.jquery2dotnet.com">Change Password</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="http://www.jquery2dotnet.com">Notifications</a> <span class="label label-info">5</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="http://www.jquery2dotnet.com">Import/Export</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="glyphicon glyphicon-trash text-danger"></span><a href="http://www.jquery2dotnet.com" class="text-danger">
+                                        Delete Account</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default col-sm-12">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseNine"><span class="glyphicon glyphicon-file">
+                        </span>Note</a>
+                    </h4>
+                </div>
+                <div id="collapseNine" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <table class="table">
+                            <tr>
+                                <td>
+                                    <span class="glyphicon glyphicon-usd"></span><a href="http://www.jquery2dotnet.com">Sales</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="glyphicon glyphicon-user"></span><a href="http://www.jquery2dotnet.com">Customers</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="glyphicon glyphicon-tasks"></span><a href="http://www.jquery2dotnet.com">Products</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="glyphicon glyphicon-shopping-cart"></span><a href="http://www.jquery2dotnet.com">Shopping Cart</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default col-sm-12">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTen"><span class="glyphicon glyphicon-user">
+                        </span>Summary</a>
+                    </h4>
+                </div>
+                <div id="collapseTen" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <table class="table">
+                            <tr>
+                                <td>
+                                    <a href="http://www.jquery2dotnet.com">Change Password</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="http://www.jquery2dotnet.com">Notifications</a> <span class="label label-info">5</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="http://www.jquery2dotnet.com">Import/Export</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="glyphicon glyphicon-trash text-danger"></span><a href="http://www.jquery2dotnet.com" class="text-danger">
+                                        Delete Account</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+    
+</div>
